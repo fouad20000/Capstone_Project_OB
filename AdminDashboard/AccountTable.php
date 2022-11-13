@@ -42,13 +42,6 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="Mainpage.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -84,8 +77,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
-                        <a class="collapse-item" href="LPI.php">License plate information</a>
-                        <a class="collapse-item" href="DP.php">Detected Plates</a>
+                        <a class="collapse-item" href="DP.php">List of License Plates</a>
                     </div>
                 </div>
             </li>
