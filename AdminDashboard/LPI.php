@@ -39,11 +39,14 @@
                 <div class="sidebar-brand-text mx-3">Back To Home Page</div>
             </a>
 
+<<<<<<< HEAD
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+=======
+>>>>>>> parent of f1574da (Revert "DP.php and crud deleted")
 
             <!-- Heading -->
             <div class="sidebar-heading">
