@@ -9,11 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Detected Plates</title>
+    <title>List of License Plates</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -40,13 +42,6 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="Mainpage.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -57,11 +52,13 @@
 
             <!-- Nav Item - Account Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="AccountTable.php" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="AccountTable.php" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Account</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
                         <a class="collapse-item" href="AccountTable.php">Account Table</a>
@@ -71,15 +68,16 @@
 
             <!-- Nav Item - License Plate Number Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>License Plate Number</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
-                        <a class="collapse-item" href="LPI.php">License plate information</a>
-                        <a class="collapse-item" href="DP.php">Detected Plates</a>
+                        <a class="collapse-item" href="DP.php">List of License Plates</a>
                     </div>
                 </div>
             </li>
@@ -107,14 +105,14 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <h2>List of Detected Cars</h2>
+                    <h2>List of License Plates</h2>
                     <a class="btn btn-primary" href="CRUDDP/Create.php" role="button">Add License Plate</a>
                     <br>
                     .<table class="table">
                         <!-- Table head -->
                         <thead>
                             <tr>
-                                <th>Number of Detected License Plates</th>
+                                <th>License Plates ID</th>
                                 <th>License Plate Box</th>
                                 <th>Actions</th>
                             </tr>

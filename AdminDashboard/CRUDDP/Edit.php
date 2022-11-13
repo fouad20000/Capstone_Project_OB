@@ -53,7 +53,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
@@ -80,13 +82,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="../Mainpage.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -97,11 +92,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
             <!-- Nav Item - Account Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="../AccountTable.php" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="../AccountTable.php" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Account</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
                         <a class="collapse-item" href="../AccountTable.php">Account Table</a>
@@ -111,15 +108,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
             <!-- Nav Item - License Plate Number Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>License Plate Number</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
-                        <a class="collapse-item" href="../LPI.php">License plate information</a>
-                        <a class="collapse-item" href="../DP.php">Detected Plates</a>
+                        <a class="collapse-item" href="../DP.php">List of License Plates</a>
                     </div>
                 </div>
             </li>
@@ -149,12 +147,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <div class="my-5">
-                        <h2>Editing the Detected License Plate</h2>
+                        <h2>Editing the License Plate</h2>
                         <form method="post">
                             <input type="hidden" name="id" value="<?php echo $row['Num_Detected']; ?>" required>
                             <label class="col-md-3 col-form-label">Name:</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="<?php echo $row['licenseplatebox']; ?>" required>
+                                <input type="text" class="form-control" name="name"
+                                    value="<?php echo $row['licenseplatebox']; ?>" required>
                             </div>
                             <br>
                             <div class="row mb-4 ">
@@ -163,7 +162,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                                     <br>
                                 </div>
                                 <div class="col-md-2 m-lg-2">
-                                    <button class="btn btn-danger"><a href="../DP.php" class="text-white">Cancel</a></button>
+                                    <button class="btn btn-danger"><a href="../DP.php"
+                                            class="text-white">Cancel</a></button>
                                 </div>
                             </div>
                         </form>
