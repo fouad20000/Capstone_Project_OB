@@ -39,51 +39,15 @@
                 <div class="sidebar-brand-text mx-3">Back To Home Page</div>
 
 
-<<<<<<< HEAD
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+                <!-- Divider -->
+                <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Table
-            </div>
-
-            <!-- Nav Item - Account Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="AccountTable.php" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Account</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Tables:</h6>
-                        <a class="collapse-item" href="AccountTable.php">Account Table</a>
-                    </div>
-=======
                 <!-- Heading -->
                 <div class="sidebar-heading">
                     Table
->>>>>>> parent of f1574da (Revert "DP.php and crud deleted")
                 </div>
 
-<<<<<<< HEAD
-            <!-- Nav Item - License Plate Number Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>License Plate Number</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Tables:</h6>
-                        <a class="collapse-item" href="LPI.php">License plate information</a>
-<<<<<<< HEAD
-=======
                 <!-- Nav Item - Account Menu -->
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="AccountTable.php" data-toggle="collapse"
@@ -97,10 +61,37 @@
                             <h6 class="collapse-header">Tables:</h6>
                             <a class="collapse-item" href="AccountTable.php">Account Table</a>
                         </div>
->>>>>>> parent of f1574da (Revert "DP.php and crud deleted")
-=======
+                    </div>
+
+                    <<<<<<< HEAD <!-- Nav Item - License Plate Number Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                        aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fas fa-fw fa-wrench"></i>
+                        <span>License Plate Number</span>
+                    </a>
+                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Tables:</h6>
+                            <a class="collapse-item" href="LPI.php">License plate information</a>
+                            <<<<<<< HEAD <<<<<<< HEAD=======<!-- Nav Item - Account Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="AccountTable.php" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Account</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingUtilities"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Tables:</h6>
+                            <a class="collapse-item" href="AccountTable.php">Account Table</a>
+                        </div>
+
                         <a class="collapse-item" href="DP.php">Detected Plates</a>
->>>>>>> parent of 083e533 (DP column deleted)
+
+                        <a class="collapse-item" href="DP.php">Detected Plates</a>
                     </div>
                 </li>
 
