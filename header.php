@@ -66,7 +66,7 @@ session_start();
                         <button class="btn btn-primary dropdown-toggle" type="button"
                             data-toggle="dropdown"><?php echo "Welcome " . $_SESSION['usersuid'] ?></button>
                         <ul class="dropdown-menu">
-                            <li><a href="AdminDashboard/Mainpage.php">Profile Page</a></li>
+                            <li><a href="AdminDashboard/AccountTable.php">Profile Page</a></li>
                             <li><a href="Login_System/logout.inc.php">Logout</a></li>
                         </ul>
                     </div>
