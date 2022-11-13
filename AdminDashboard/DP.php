@@ -142,8 +142,8 @@
                                         <td>$row[Name]</td>
                                         <td>$row[licenseplatebox]</td>
                                         <td>
-                                            <a class='btn btn-primary' href='CRUDDP/Edit.php?Num_Detected=$row[Num_Detected]'>Edit</a>
-                                            <a class='btn btn-danger' href='CRUDDP/Delete.php?Num_Detected=$row[Num_Detected]'>Delete</a>
+                                            <a class='btn btn-primary' href='CRUDDP/Edit.php?Num_detected=$row[Num_detected]'>Edit</a>
+                                            <a class='btn btn-danger' href='CRUDDP/Delete.php?Num_detected=$row[Num_detected]'>Delete</a>
                                         </td>
                                     </tr> 
                                 ";

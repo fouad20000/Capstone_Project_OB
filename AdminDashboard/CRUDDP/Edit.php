@@ -10,18 +10,18 @@ require_once '../../Login_System/dbh.inc.php';
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     // GET method: Show the data of the admin
-    if (!isset($_GET['Num_Detected'])) {
+    if (!isset($_GET['Num_detected'])) {
         header("location: ../DP.php");
         exit;
     }
 
-    $id = $_GET['Num_Detected'];
+    $id = $_GET['Num_detected'];
 
-    $sql = "SELECT * FROM licenseplate WHERE Num_Detected=$id";
+    $sql = "SELECT * FROM licenseplate WHERE Num_detected=$id";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
 
-    $name = $row['Num_Detected'];
+    $name = $row['Num_detected'];
 } else {
 
 
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $name = $_POST['name'];
     $namo = $_POST['namo'];
     do {
-        $sql = "UPDATE licenseplate SET Name='$namo', licenseplatebox='$name' WHERE Num_Detected=$id";
+        $sql = "UPDATE licenseplate SET Name='$namo', licenseplatebox='$name' WHERE Num_detected=$id";
         $result = $conn->query($sql);
 
         header("location: ../DP.php");
@@ -150,7 +150,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                     <div class="my-5">
                         <h2>Editing the License Plate</h2>
                         <form method="post">
-                            <input type="hidden" name="id" value="<?php echo $row['Num_Detected']; ?>" required>
+                            <input type="hidden" name="id" value="<?php echo $row['Num_detected']; ?>" required>
                             <label class="col-md-3 col-form-label">Name:</label>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="namo" value="<?php echo $row['Name']; ?>"

@@ -2,13 +2,13 @@
 session_start();
 
 
-if (isset($_GET['Num_Detected'])) {
+if (isset($_GET['Num_detected'])) {
 
-    $id = $_GET['Num_Detected'];
+    $id = $_GET['Num_detected'];
 
     require_once '../../Login_System/dbh.inc.php';
 
-    $sql = "DELETE FROM licenseplate WHERE Num_Detected=$id";
+    $sql = "DELETE FROM licenseplate WHERE Num_detected=$id";
     $conn->query($sql);
 }
 
