@@ -5,8 +5,9 @@ $name = "";
 $license = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $license = $_POST['lc'];
     $name = $_POST['name'];
+    $license = $_POST['lc'];
+
 
     do {
         if (empty($license)) {
