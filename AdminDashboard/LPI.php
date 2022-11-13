@@ -39,14 +39,11 @@
                 <div class="sidebar-brand-text mx-3">Back To Home Page</div>
             </a>
 
-<<<<<<< HEAD
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-=======
->>>>>>> parent of f1574da (Revert "DP.php and crud deleted")
 
             <!-- Heading -->
             <div class="sidebar-heading">
@@ -81,7 +78,6 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
                         <a class="collapse-item" href="LPI.php">License plate information</a>
-                        <a class="collapse-item" href="DP.php">Detected Plates</a>
                     </div>
                 </div>
             </li>
@@ -116,8 +112,10 @@
                         <!-- Table head -->
                         <thead>
                             <tr>
-                                <th>Number of License Plates</th>
+                                <th>License Plates ID</th>
                                 <th>License Plate Box</th>
+                                <th>Name</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <!-- Table Content -->
