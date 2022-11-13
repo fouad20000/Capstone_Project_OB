@@ -138,7 +138,7 @@
                             while ($row = $result->fetch_assoc()) {
                                 echo "
                                     <tr>
-                                        <td>$row[Num_Detected]</td>
+                                        <td>$row[Num_detected]</td>
                                         <td>$row[Name]</td>
                                         <td>$row[licenseplatebox]</td>
                                         <td>
