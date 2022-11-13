@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             break;
         }
         //Adding the new user into database
-        $sql = "INSERT INTO licenseplate(Name,licenseplatebox)" . "VALUES('$namo','$license')";
+        $sql = "INSERT INTO licenseplate(Name,licenseplatebox)" . "VALUES('$name','$license')";
         $result = $conn->query($sql);
 
 
