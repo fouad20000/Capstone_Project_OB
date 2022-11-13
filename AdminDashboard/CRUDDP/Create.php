@@ -1,11 +1,12 @@
 <?php
 require_once '../../Login_System/dbh.inc.php';
 
+$name = "";
 $license = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $license = $_POST['lc'];
-
+    $name = $_POST['name'];
 
     do {
         if (empty($license)) {
@@ -15,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //Adding the new user into database
         $sql = "INSERT INTO licenseplate(licenseplatebox)" . "VALUES('$license')";
         $result = $conn->query($sql);
+
 
         $license = "";
 
@@ -136,6 +138,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="my-5">
                         <h2>Adding License Plate</h2>
                         <form method="post">
+                            <label class="col-md-3 col-form-label">Name:</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="name" value="<?php echo $name; ?>"
+                                    required>
+                            </div>
+                            <br>
                             <label class="col-md-3 col-form-label">Plate Number Box:</label>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="lc" value="<?php echo $license; ?>"

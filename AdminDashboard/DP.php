@@ -113,6 +113,7 @@
                         <thead>
                             <tr>
                                 <th>License Plates ID</th>
+                                <th>Name</th>
                                 <th>License Plate Box</th>
                                 <th>Actions</th>
                             </tr>
@@ -138,6 +139,7 @@
                                 echo "
                                     <tr>
                                         <td>$row[Num_Detected]</td>
+                                        <td>$row[Name]</td>
                                         <td>$row[licenseplatebox]</td>
                                         <td>
                                             <a class='btn btn-primary' href='CRUDDP/Edit.php?Num_Detected=$row[Num_Detected]'>Edit</a>

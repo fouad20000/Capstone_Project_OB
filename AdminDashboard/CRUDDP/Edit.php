@@ -2,6 +2,7 @@
 
 $id = "";
 $name = "";
+$namo = "";
 
 
 require_once '../../Login_System/dbh.inc.php';
@@ -27,9 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     // POST method: Update the data of the admin
     $id = $_POST['id'];
     $name = $_POST['name'];
-
+    $namo = $_POST['namo'];
     do {
-        $sql = "UPDATE licenseplate SET licenseplatebox='$name' WHERE Num_Detected=$id";
+        $sql = "UPDATE licenseplate SET Name='$namo', licenseplatebox='$name' WHERE Num_Detected=$id";
         $result = $conn->query($sql);
 
         header("location: ../DP.php");
@@ -150,6 +151,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                         <h2>Editing the License Plate</h2>
                         <form method="post">
                             <input type="hidden" name="id" value="<?php echo $row['Num_Detected']; ?>" required>
+                            <label class="col-md-3 col-form-label">Name:</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="namo" value="<?php echo $row['Name']; ?>"
+                                    required>
+                            </div>
+                            <br>
                             <label class="col-md-3 col-form-label">Name:</label>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="name"
