@@ -81,6 +81,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
                         <a class="collapse-item" href="LPI.php">License plate information</a>
+                        <a class="collapse-item" href="DP.php">Detected Plates</a>
                     </div>
                 </div>
             </li>

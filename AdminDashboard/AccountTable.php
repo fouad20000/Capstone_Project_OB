@@ -82,6 +82,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tables:</h6>
                         <a class="collapse-item" href="LPI.php">License plate information</a>
+<<<<<<< HEAD
 =======
                 <!-- Nav Item - Account Menu -->
                 <li class="nav-item">
@@ -97,6 +98,9 @@
                             <a class="collapse-item" href="AccountTable.php">Account Table</a>
                         </div>
 >>>>>>> parent of f1574da (Revert "DP.php and crud deleted")
+=======
+                        <a class="collapse-item" href="DP.php">Detected Plates</a>
+>>>>>>> parent of 083e533 (DP column deleted)
                     </div>
                 </li>
 
