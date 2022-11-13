@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Account Table</title>
+    <title>Detected Plates</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -107,17 +107,15 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <h2>List of Accounts</h2>
-                    <a class="btn btn-primary" href="CRUD/Create.php" role="button">Add Accounts</a>
+                    <h2>List of Detected Cars</h2>
+                    <a class="btn btn-primary" href="CRUDDP/Create.php" role="button">Add License Plate</a>
                     <br>
                     .<table class="table">
                         <!-- Table head -->
                         <thead>
                             <tr>
-                                <th>User ID</th>
-                                <th>User Name</th>
-                                <th>User Email</th>
-                                <th>Username</th>
+                                <th>Number of Detected License Plates</th>
+                                <th>License Plate Box</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -128,7 +126,7 @@
                             require_once '../Login_System/dbh.inc.php';
 
                             // Query
-                            $sql = "SELECT * FROM users";
+                            $sql = "SELECT * FROM licenseplate";
                             //saving the query 
                             $result = $conn->query($sql);
 
@@ -141,13 +139,11 @@
                             while ($row = $result->fetch_assoc()) {
                                 echo "
                                     <tr>
-                                        <td>$row[usersId]</td>
-                                        <td>$row[usersName]</td>
-                                        <td>$row[usersEmail]</td>
-                                        <td>$row[usersUid]</td>
+                                        <td>$row[Num_Detected]</td>
+                                        <td>$row[licenseplatebox]</td>
                                         <td>
-                                            <a class='btn btn-primary' href='CRUD/edit.php?usersId=$row[usersId]'>Edit</a>
-                                            <a class='btn btn-danger' href='CRUD/delete.php?usersId=$row[usersId]'>Delete</a>
+                                            <a class='btn btn-primary' href='CRUDDP/Edit.php?Num_Detected=$row[Num_Detected]'>Edit</a>
+                                            <a class='btn btn-danger' href='CRUDDP/Delete.php?Num_Detected=$row[Num_Detected]'>Delete</a>
                                         </td>
                                     </tr> 
                                 ";
