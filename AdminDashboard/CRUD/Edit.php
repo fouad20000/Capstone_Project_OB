@@ -195,8 +195,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                                     <br>
                                 </div>
                                 <div class="col-md-2 m-lg-2">
-                                    <button class="btn btn-danger" href=" ../AccountTable.php"><a
-                                            href="../AccountTable.php" class="text-white">Cancel</a></button>
+                                    <button class="btn btn-danger" href=" ../AccountTable.php">Cancel</button>
                                 </div>
                             </div>
                         </form>
