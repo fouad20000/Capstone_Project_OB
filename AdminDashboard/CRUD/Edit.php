@@ -190,8 +190,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                             <br>
                             <div class="row mb-4 ">
                                 <div class="col-md-4 m-lg-2">
-                                    <button type="submit" class="btn btn-primary" href=" ../AccountTable.php"><a
-                                            href=" ../AccountTable.php" class="text-white">Edit Account</a></button>
+                                    <button type="submit" class="btn btn-primary" href=" ../AccountTable.php">Edit
+                                        Account</button>
                                     <br>
                                 </div>
                                 <div class="col-md-2 m-lg-2">
