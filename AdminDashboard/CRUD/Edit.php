@@ -192,13 +192,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                                 <div class="col-md-4 m-lg-2">
                                     <button type="update_submit" class="btn btn-primary">Edit Account</button>
                                     <br>
-                                    <?php
-                                    if (!empty($errorMessage)) {
-                                        echo $errorMessage;
-                                    } else {
-                                        echo $successMessage;
-                                    }
-                                    ?>
                                 </div>
                                 <div class="col-md-2 m-lg-2">
                                     <button class="btn btn-danger"><a href="../AccountTable.php"
