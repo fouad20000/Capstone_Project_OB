@@ -144,8 +144,8 @@
                                         <td>$row[usersEmail]</td>
                                         <td>$row[usersUid]</td>
                                         <td>
-                                            <a class='btn btn-primary' href='CRUD/edit.php?usersId=$row[usersId]'>Edit</a>
-                                            <a class='btn btn-danger' href='CRUD/delete.php?usersId=$row[usersId]'>Delete</a>
+                                            <a class='btn btn-primary' href='CRUD/Edit.php?usersId=$row[usersId]'>Edit</a>
+                                            <a class='btn btn-danger' href='CRUD/Delete.php?usersId=$row[usersId]'>Delete</a>
                                         </td>
                                     </tr> 
                                 ";
