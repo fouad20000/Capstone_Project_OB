@@ -52,15 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         $sql = "UPDATE users SET usersName='$name', usersEmail='$email',usersUid='$username',userspwd='$hashedpwd' WHERE usersId=$id";
         $result = $conn->query($sql);
-
-
-        if (!$result) {
-            $errorMessage = "Invalid query: " . $conn->error;
-            break;
-        }
-        $successMessage = "Account updated correctly";
-        header("location: ../AccountTable.php");
-        exit;
     } while (false);
 }
 ?>
